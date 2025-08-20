@@ -1,0 +1,1189 @@
+/* Homepage styles */
+
+/*5.	Used sans-serif font and optimized font size for better readability*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 17px;
+    
+}
+
+.home-page_body {
+    font-family: Arial, sans-serif;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid red;
+    /* margin: 0; */
+}
+
+/* Header / Navigation Bar */
+header {
+    background-color: #413D3C;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* 3.	Adjusted spacing in the navbar */
+.navbar{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+
+}
+/* 1.	Added a drop-down list in the navbar.*/
+.dropdown{
+  background-color:  #413D3C;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px;
+  font-size: 22px;
+  border: none;
+}
+.nav-text{
+  margin-left: 80px;
+  padding: 0;
+
+}
+.logo-img img{
+    height: 65px;
+}
+
+.navbar .logo h1 {
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 26px;
+    font-style: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav-links li {
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 0px;
+    font-weight:520;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 22px;
+}
+.nav-links a:hover,.dropdown:hover{
+    background-color: #c4aa06;
+    text-decoration: none;
+    border-radius: 18px;
+}
+
+/* Hero Section */
+
+.hero {
+    background: url('C:\Users\bhave\OneDrive\Desktop\html css\practice\React\practice\public\util\1200x0.jpg');
+    background-repeat:  no-repeat;
+    background-position: top center;
+    background-size:cover ;
+    height: 100vh;
+    max-width:100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    margin: 0;
+    /* border: 2px solid green; */
+    justify-content: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+/* 2.	Applied consistent button styling */
+.cta-button {
+    margin-top: 12px;
+    background-color: #c4aa06;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #554a03;
+}
+
+/* About Us Section */
+
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    
+}
+.about-us-txt{
+    font-size: 22px;
+    line-height: 1.6;
+    color: #333;
+    padding: 18px;
+  }
+.about-us-txt p{
+  font-size: 22px;
+}
+.our-mission,.why-started{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.our-mission-img,.started-image{
+    height: 800px;
+    overflow: hidden;
+    background-size: cover;
+}
+/* 10.	 Optimized image sizes to ensure they fit their respective sections properly. */
+.mission-img{
+    height: 43vh;
+    width: 700px;
+    border-radius: 35px;
+    z-index: 100;
+    margin-right: 80px;
+    box-shadow: 2px 4px 1 black;
+}
+/* 6.	Added left and right margins to improve content alignment. */
+.mission-txt{
+    max-width: 600px;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #333;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  
+.our-mission h1,.why-started h1 {
+    margin-bottom: 10px;
+    color: #c4aa06;
+    text-align: center;
+  }
+.impact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.left{
+    background: url('C:\Users\bhave\OneDrive\Desktop\html css\practice\React\practice\public\util\9b52f8ab775cf86eb51f1446f34e14da.jpg');
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.impact div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* 8.	Increased spacing between sections to improve clarity and visual appeal. */
+.donation-simple {
+    max-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 120px;
+    margin-top:120px;
+    overflow: hidden;
+    background-size: cover;
+  }
+  
+  .donation-content {
+    max-width: 600px;
+  }
+  
+  .donation-content h2 {
+    font-size: 2rem;
+    color: #c4aa06;
+    margin-bottom: 20px;
+  }
+  
+  .donation-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  /* 2.	Applied consistent button styling */
+  .donate-button {
+    padding: 12px 25px;
+    background-color: #c4aa06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .donate-button:hover {
+    background-color: #554a03;
+  }
+  
+  .donation-image img {
+    max-height: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+
+/* Adopt a Pet Section */
+
+.adoption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 20px;
+    width: 100%;
+}
+.adopt-pet{
+    text-align: center;
+}
+/* 9.	Added on hover effect  */
+.pet:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.pet {
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.pet img {
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Adoption story */
+
+.adoption-story{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.story-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+/* How You Can Help Section */
+
+.contribution{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.contribution-area {
+    display: flex;
+    column-gap: 55px;
+    padding: 60px 20px;
+}
+.contribution-area p{
+    text-align: justify;
+}
+.help-option {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 58vh;
+    width: 30%;
+    padding-bottom: 75px;
+
+}
+.help-option img{
+    height: 80%;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.help-option p{
+    margin-top: 11px;
+}
+.h1-txt{
+    color: #c4aa06;
+    padding: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+/* 9.	Added on hover effect  */
+.help-option:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* Footer */
+
+.footer {
+    background-color: #413D3C;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+/* 4.	Improved footer layout by adding proper spacing. */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin: 10px;
+}
+
+.footer-section-contact,.footer-section-social, .footer-section-links{
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-section-links h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #c4aa06;
+}
+
+.footer-section-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-container h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #c4aa06;
+}
+.footer-section-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-btn:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #c4aa06;
+    padding-top: 10px;
+}
+
+
+/* Login styles */
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #413D3C; 
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0px);
+    z-index: -1;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #413D3C;
+    margin-bottom: 15px;
+  }
+  
+  .logo-img img{
+    height: 65px;
+  }
+  .login-container {
+    
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    height: 550px;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 20px;
+    color: black;
+  }
+  .logo h1{
+    font-size: 25px;
+    color: #413D3C;
+  }
+  .outer-text {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #c4aa06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-submit:hover {
+    background-color: #554a03;
+  }
+  .social-login {
+    margin-top: 20px;
+  }
+  
+  .social-login p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #413D3C;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .social-btn img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  
+  
+  .forgot-password {
+    margin-bottom: 15px;
+  }
+  
+  .forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-container p {
+    font-size: 14px;
+  }
+  
+  .login-container a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  /* Sign up style */
+  .sign-up_body {
+    font-family: Arial, sans-serif;
+    background-color: #413D3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    
+  }
+  .background-sign{
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+    z-index: -1;
+  }
+  
+  .logo-area{
+    display: flex;
+    justify-content: space-evenly;
+    color: #413D3C;
+  }
+  .logo-img img{
+    height: 65px;
+  }
+  .form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .logo{
+    font-size: 25px;
+    color: #413D3C;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  /* 2.	Applied consistent button styling */
+  button {
+    padding: 12px;
+    background-color: #c4aa06;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #554a03;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+  }
+  
+  .terms label {
+    margin-left: 8px;
+  }
+  
+  .mission-txt p {
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* Pet-quiz */
+
+  .quiz-container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: #fff3e0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #ff7043;
+    font-size: 24px;
+  }
+  
+  .progress {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .question {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .option-button {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc80;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .option-button:hover {
+    background-color: #ff8a65;
+    color: white;
+  }
+
+  /* pet schedule */
+
+  .schedule-container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fef8e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #ff7b54;
+    margin-bottom: 15px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .add-btn, .remove-btn, .clear-btn {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  
+  .add-btn {
+    background: #ff7b54;
+    color: white;
+  }
+  
+  .add-btn:hover {
+    background: #e66342;
+  }
+  
+  .schedule-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .schedule-item {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .remove-btn {
+    background: #e63946;
+    color: white;
+  }
+  
+  .remove-btn:hover {
+    background: #c62839;
+  }
+  
+  .clear-btn {
+    margin-top: 15px;
+    background: #6c757d;
+    color: white;
+  }
+  
+  .clear-btn:hover {
+    background: #545b62;
+  }
+  
+
+  /*  */
+
+  .app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .quiz-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .quiz-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .quiz-form select,
+  .quiz-form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .quiz-form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  /*  */
+  .pet-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .filter-container input,
+  .filter-container select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .quiz-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .quiz-btn:hover {
+    background-color: #e65c00;
+  }
+  
+  .pet-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Fixed position for quiz button & search bar */
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+  }
+  
+  .filter-container input,
+  .filter-container select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .quiz-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .quiz-btn:hover {
+    background-color: #e65c00;
+  }
+  
+  /* Three pet cards per row */
+  .pet-image {
+    width: 100%; /* Make sure the image fits the container */
+    height: 180px; /* Uniform height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  .pet-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pet-card {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 320px; /* Prevents too wide cards */
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .pet-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pet-card img {
+    width: 100%;
+    height: 200px; /* Uniform image size */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .pet-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .pet-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .pet-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pet-list {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+    }
+  }
+  
+  
+
+  /*  */
+  .credit-score-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  .business-card {
+    width: 350px; /* Increased width */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .business-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .business-card img {
+    width: 100%;
+    height: 200px; /* Slightly taller images */
+    object-fit: contain;
+    border:38px;
+  }
+  
+  .business-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .score-badge {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .certified {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .not-certified {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  .page-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+
+  /*  */
+
+  /* Donation Page Styling */
+.donation-page {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.donation-page-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.donation-page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donation-page-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.donation-page-input,
+.donation-page-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donation-page-button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.donation-page-button:hover {
+  background-color: #cc5200;
+}
+
+
+.adopt-page {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adopt-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.confirm-adopt-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirm-adopt-btn:hover {
+  background-color: #218838;
+}

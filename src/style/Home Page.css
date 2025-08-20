@@ -1,0 +1,334 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header / Navigation Bar */
+header {
+    background-color: #413D3C;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.logo-img img{
+    height: 55px;
+}
+.navbar .logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-style: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li:hover{
+    background-color: #c4aa06;
+    
+    border-radius: 18px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    padding: 8px;
+    font-size: 24px;
+    font-style: 450;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../utils/1200x0.jpg');
+    background-repeat:  no-repeat;
+    background-position: center ;
+    background-position: top center;
+    background-size:cover ;
+    height: 100vh;
+    max-width:100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button {
+    background-color: #c4aa06;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #554a03;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.our-mission,.why-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.our-mission-img,.started-image{
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+}
+.mission-img{
+    height: 45vh;
+    width: 700px;
+    border-radius: 35px;
+    z-index: 100;
+    margin-right: 60px;
+    box-shadow: 2px 4px 1 black;
+}
+.mission-txt{
+    border: 2px solid red;
+    align-self: center;
+    text-align: center;
+    max-width: 600px;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #333;
+  }
+.our-mission h1,.why-started h1 {
+    margin-bottom: 10px;
+    color: #c4aa06;
+    text-align: center;
+  }
+.impact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.left{
+    background: url('../utils/9b52f8ab775cf86eb51f1446f34e14da.jpg');
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.impact div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-simple {
+    max-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    overflow: hidden;
+    background-size: cover;
+  }
+  
+  .donation-content {
+    max-width: 600px;
+  }
+  
+  .donation-content h2 {
+    font-size: 2rem;
+    color: #c4aa06;
+    margin-bottom: 20px;
+  }
+  
+  .donation-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .donate-button {
+    padding: 12px 25px;
+    background-color: #c4aa06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .donate-button:hover {
+    background-color: #554a03;
+  }
+  
+  .donation-image img {
+    max-height: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+
+/* Adopt a Pet Section */
+.adoption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 20px;
+    width: 100%;
+    /* border: 2px solid rgb(23, 133, 130); */
+}
+.adopt-pet{
+    text-align: center;
+}
+.pet {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    /* display: flex; */
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+
+}
+
+.pet img {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.show-more{
+    font-size: 22px;
+    padding: 5px 8px;
+    border-radius: 15px;
+    background-color: #c4aa06;
+    color: white;
+    border: none;
+}
+/* Adoption story */
+.adoption-story{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.story-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 20px;
+    width: 100%;
+}
+/* How You Can Help Section */
+.contribution{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contribution-area {
+    display: flex;
+    column-gap: 25px;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.help-option {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 58vh;
+    width: 30%;
+    padding-bottom: 75px;
+
+}
+
+.h1-txt{
+    color: #c4aa06;
+    padding: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+.help-option img{
+    height: 80%;
+    width: 100%;
+    margin-bottom: 16px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}

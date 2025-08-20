@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #413D3C; 
+    /* background:url('../utils/contact-us-dog-paw-1024x512.jpg'); */
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0px);
+    z-index: -1;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .logo-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #413D3C;
+    margin-bottom: 15px;
+  }
+  .logo h1{
+    color: #413D3C;
+  }
+  .logo-img img{
+    height: 65px;
+  }
+  .login-container {
+    
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .outer-text {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c4aa06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-container button:hover {
+    background-color: #554a03;
+  }
+  
+  .forgot-password {
+    margin-bottom: 15px;
+  }
+  
+  .forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-container p {
+    font-size: 14px;
+  }
+  
+  .login-container a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline;
+  }
+  

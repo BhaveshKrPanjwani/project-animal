@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+  
+    background-color: #413D3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+  }
+  .background-sign{
+    position: fixed;
+    /* background: url("../utils/025-PetStock-animal-carers-20150812_DSC_0115.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+    z-index: -1;
+  }
+  .logo-area{
+    display: flex;
+    justify-content: space-evenly;
+    color: #413D3C;
+  }
+  .logo-img img{
+    height: 65px;
+  }
+  .form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #c4aa06;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #554a03;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+  }
+  
+  .terms label {
+    margin-left: 8px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
