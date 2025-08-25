@@ -25,7 +25,7 @@ const Login = () => {
       <div className="logo-area">
         <div className="logo-img">
           <img
-            src="/util/logo.jpeg"
+            src="${process.env.PUBLIC_URL}/util/logo.jpeg"
             alt="Pawfect Haven Logo"
           />
         </div>
@@ -61,18 +61,18 @@ const Login = () => {
           <div className="icons">
             <button className="social-btn">
               <img
-                src="/util/google-mail-icon-logo-isolated-on-transparent-background-free-vector.jpg"
+                src="${process.env.PUBLIC_URL}/util/google-mail-icon-logo-isolated-on-transparent-background-free-vector.jpg"
                 alt="Google"
               />
             </button>
             <button className="social-btn">
-              <img src="/util/facebook-logo.png" alt="Facebook" />
+              <img src="${process.env.PUBLIC_URL}/util/facebook-logo.png" alt="Facebook" />
             </button>
             <button className="social-btn">
-              <img src="/util/ig-logo.jpg" alt="Instagram" />
+              <img src="${process.env.PUBLIC_URL}/util/ig-logo.jpg" alt="Instagram" />
             </button>
             <button className="social-btn">
-              <img src="/util/x-logo.webp" alt="Twitter" />
+              <img src="${process.env.PUBLIC_URL}/util/x-logo.webp" alt="Twitter" />
             </button>
           </div>
         </div>

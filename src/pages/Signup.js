@@ -42,7 +42,7 @@ const Signup = () => {
         <div className="logo-area">
           <div className="logo-img">
             <img
-              src="/util/logo.jpeg"
+              src={process.env.PUBLIC_URL+"/util/logo.jpeg"}
               alt="Pawfect Haven Logo"
             />
           </div>

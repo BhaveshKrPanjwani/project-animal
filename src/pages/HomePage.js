@@ -24,7 +24,7 @@ const HomePage = () => {
       <header>
         <nav className="navbar">
           <div className="logo-img">
-            <img src="/util/logo.jpeg"
+            <img src={process.env.PUBLIC_URL+"/util/logo.jpeg"}
               alt="Pawfect Haven Logo"
             />
           </div>
@@ -99,12 +99,12 @@ const HomePage = () => {
           <div className="our-mission-img">
             <img
               className="mission-img"
-              src="/util/rescue-a-baby-birds.jpg"
+              src={process.env.PUBLIC_URL+"/util/rescue-a-baby-birds.jpg"}
               alt="Rescue a baby bird"
             />
             <img
               className="mission-img"
-              src="/util/why-is-my-dog-crying.jpg"
+              src={process.env.PUBLIC_URL+"/util/why-is-my-dog-crying.jpg"}
               alt="Why is my dog crying"
             />
           </div>
@@ -133,12 +133,12 @@ const HomePage = () => {
           <div className="started-img">
             <img
               className="mission-img"
-              src="/util/starved-dog-1.jpg"
+              src={process.env.PUBLIC_URL+"/util/starved-dog-1.jpg"}
               alt="Starved dog"
             />
             <img
               className="mission-img"
-              src="/util/crying-cow.jpeg"
+              src={process.env.PUBLIC_URL+"/util/crying-cow.jpeg"}
               alt="Crying cow"
             />
           </div>
@@ -151,7 +151,7 @@ const HomePage = () => {
           <button className="donate-button" onClick={() => navigate("/donations")}>Donate Now</button>
         </div>
         <div className="donation-image">
-          <img src="/util/mi_355_Donate_1352902479_1547.png" alt="Donation " />
+          <img src={process.env.PUBLIC_URL+"/util/mi_355_Donate_1352902479_1547.png"} alt="Donation " />
         </div>
       </section>
 
@@ -163,14 +163,14 @@ const HomePage = () => {
           <div className="content">
             <div className="pet">
               <img
-                src="/util/9b52f8ab775cf86eb51f1446f34e14da.jpg"
+                src={process.env.PUBLIC_URL+"/util/9b52f8ab775cf86eb51f1446f34e14da.jpg"}
                 alt="Pet 1"
               />
               <p>Meet Buddy, a playful and loving dog ready for adoption!</p>
               <button className="cta-button">Adopt Buddy</button>
             </div>
             <div className="pet">
-              <img src="/util/maxresdefault.jpg" alt="Pet 2" />
+              <img src={process.env.PUBLIC_URL+"/util/maxresdefault.jpg"} alt="Pet 2" />
               <p>Meet Bella, a sweet cat looking for her forever home.</p>
               <button className="cta-button">Adopt Bella</button>
             </div>
@@ -187,7 +187,7 @@ const HomePage = () => {
           <div className="story-section">
             <div className="help-option">
               <img
-                src="/util/story1.jpg"
+                src={process.env.PUBLIC_URL+"/util/story1.jpg"}
                 alt="A happy dog with its new owner"
               />
               <p>
@@ -198,7 +198,7 @@ const HomePage = () => {
             </div>
             <div className="help-option">
               <img
-                src="/util/himali-1200x550.jpg"
+                src={process.env.PUBLIC_URL+"/util/himali-1200x550.jpg"}
                 alt="A cat lounging in its new home"
               />
               <p>
@@ -209,7 +209,7 @@ const HomePage = () => {
             </div>
             <div className="help-option">
               <img
-                src="/util/story3.webp"
+                src={process.env.PUBLIC_URL+"/util/story3.webp"}
                 alt="A dog enjoying playtime in its new backyard"
               />
               <p>
