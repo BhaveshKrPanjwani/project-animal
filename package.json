@@ -1,6 +1,5 @@
 {
-  "homepage": "https://BhaveshKrPanjwani.github.io/vite-animal-welfare-projcect",
-  "name": "practice",
+   "name": "practice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
